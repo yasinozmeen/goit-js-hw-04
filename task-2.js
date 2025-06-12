@@ -5,7 +5,8 @@ function calcAverageCalories(days) {
     day += 1;
     totalCal += i.calories;
   }
-  return (day = 0 ? 0 : totalCal / day);
+  console.log(day);
+  return day == 0 ? 0 : totalCal / day;
 }
 console.log(
   calcAverageCalories([
