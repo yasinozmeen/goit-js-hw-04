@@ -1,4 +1,4 @@
-function isEnoughCapacity(products, continerSize) {
+function isEnoughCapacity(products, containerSize) {
   let toplam = 0;
 
   const values = Object.values(products);
@@ -7,7 +7,7 @@ function isEnoughCapacity(products, continerSize) {
     toplam += i;
   }
 
-  return toplam < continerSize ? true : false;
+  return toplam <= containerSize ? true : false;
 }
 
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
